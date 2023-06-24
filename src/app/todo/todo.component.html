@@ -11,7 +11,7 @@
                             <mat-hint>Add Task Name</mat-hint>
                           </mat-form-field>
                           <button *ngIf="!isEditEnabled" (click)="addTask()" mat-raised-button [disabled]="todoForm.invalid" color="primary"> Add</button>
-                          <!-- <button *ngIf="isEditEnabled" (click)="updateTask()" mat-raised-button [disabled]="todoForm.invalid" color="primary"> Update</button> -->
+                          <button *ngIf="isEditEnabled" (click)="updateTask()" mat-raised-button [disabled]="todoForm.invalid" color="primary"> Update</button>
                     </form>
                 </mat-card>
             </div>
