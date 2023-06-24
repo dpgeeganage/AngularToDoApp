@@ -11,7 +11,7 @@
                             <mat-hint>Add Task Name</mat-hint>
                           </mat-form-field>
                           <button *ngIf="!isEditEnabled" (click)="addTask()" mat-raised-button [disabled]="todoForm.invalid" color="primary"> Add</button>
-                          <button *ngIf="isEditEnabled" (click)="updateTask()" mat-raised-button [disabled]="todoForm.invalid" color="primary"> Update</button>
+                          <!-- <button *ngIf="isEditEnabled" (click)="updateTask()" mat-raised-button [disabled]="todoForm.invalid" color="primary"> Update</button> -->
                     </form>
                 </mat-card>
             </div>
@@ -22,7 +22,7 @@
                     <div class="col-md-4">
                         <!-- todo -->
                         <div class="example-container">
-                            <h2>TO DO</h2>
+                            <h2>TO DO span</h2>
                             <div cdkDropList [cdkDropListData]="tasks" class="example-list" (cdkDropListDropped)="drop($event)">
                               <div class="example-box" *ngFor="let item of tasks; let i = index" cdkDrag>{{item.description}}
                                 <div class="box">
