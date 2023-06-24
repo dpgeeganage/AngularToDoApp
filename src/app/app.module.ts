@@ -13,6 +13,7 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import { ReactiveFormsModule } from '@angular/forms';
 import {DragDropModule} from '@angular/cdk/drag-drop';
+import { MatSelectModule } from '@angular/material/select';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import {DragDropModule} from '@angular/cdk/drag-drop';
     MatInputModule,
     MatIconModule,
     MatButtonModule,
-    DragDropModule
+    DragDropModule,
+    MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]

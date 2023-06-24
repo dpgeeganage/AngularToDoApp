@@ -1,4 +1,5 @@
 export interface ITask {
-    description: string,
-    done: boolean
+    description: string;
+    done: boolean;
+    priority: string;
 }
